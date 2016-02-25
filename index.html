@@ -1,255 +1,385 @@
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Nullpointer Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="Java experts, JVM, Java"/>
-    <script type="applijewelleryion/x-javascript">
-         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-
-    </script>
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-    <link href="css/style.css" rel='stylesheet' type='text/css'/>
-
-    <!-- Custom Theme files -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-1.12.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            size_li = $("#myList li").size();
-            x = 1;
-            $('#myList li:lt(' + x + ')').show();
-            $('#loadMore').click(function () {
-                x = (x + 3 <= size_li) ? x + 3 : size_li;
-                $('#myList li:lt(' + x + ')').show();
-            });
-            $('#showLess').click(function () {
-                x = (x - 3 < 0) ? 3 : x - 1;
-                $('#myList li').not(':lt(' + x + ')').hide();
-            });
-        });
-    </script>
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            /*
-             var defaults = {
-             containerID: 'toTop', // fading element id
-             containerHoverID: 'toTopHover', // fading element hover id
-             scrollSpeed: 1200,
-             easingType: 'linear'
-             };
-             */
-            $().UItoTop({easingType: 'easeOutQuart'});
-        });
-    </script>
+<title>NullPointer Solutions</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Java experts, JVM, Java" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"> </script>
+<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
 
 </head>
 <body>
-<!-- banner -->
-<div class="banner">
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <h1><a href="index.html">NullPointer <span>Solutions</span></a></h1>
-            </div>
-            <div class="navigation">
-                <nav class="navbar navbar-default">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="hvr-bounce-to-bottom button"><a href="#home" class="scroll">Home</a></li>
-                            <li class="hvr-bounce-to-bottom button"><a href="#about" class="scroll">About</a></li>
-                            <!--<li class="hvr-bounce-to-bottom button"><a href="#services" class="scroll">Services</a></li>-->
-                            <!--<li class="hvr-bounce-to-bottom button"><a href="#features" class="scroll">Features</a></li>-->
-                            <li class="hvr-bounce-to-bottom button"><a href="#contact" class="scroll">Contact</a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="banner-info">
-            <h2>We'll fix your Billion Dollar Mistake</h2>
-            <div class="clearfix"></div>
-        </div>
+<!--body-->
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="top-header">		  
+				<div class="logo">
+					NULLPOINTER SOLUTIONS
+				</div>
+			  <div class="top-menu">
+					<span class="menu"> </span>
+				  <ul>
+				      <nav class="cl-effect-5">
+							<li><a class="active scroll"  href="#home"><span data-hover="HOME">HOME</span></a></li> 
+							<li>/</li>
+							<li><a class="scroll" href="#service"><span data-hover="SERVICES">SERVICES</span></a></li>
+							<li>/</li>
+							<!--<li><a class="scroll" href="#portfolio"><span data-hover="PORTFOLIO">PORTFOLIO</span></a></li> -->
+							<!--<li>/</li>-->
+							<!--<li><a class="scroll" href="#teamwork"><span data-hover="TEAMWORK">TEAMWORK</span></a></li> -->
+							<!--<li>/</li>-->
+							<li><a class="scroll" href="#contact"><span data-hover="CONTACT">CONTACT</span></a></li>
+					 </nav>
+				  </ul>			 	 
+			  </div>	
+				<!-- script-for-menu -->
+			 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+			 </script>
+			 <!-- script-for-menu -->
+			 <div class="clearfix"></div>			
+		 </div>	 
+		 <div class="banner-info">	
+			<h1>WELCOME !</h1>
+			<h3>WE'LL FIX YOUR BILLION DOLLAR MISTAKE</h3>
+			<a class="downarrow scroll" href="#service"><span> </span></a>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div id="service" class="service">
+	 <div class="container">
+		 <div class="service-head">
+		 <h3>SERVICES</h3>
+		 <h4>WHAT WE DO?</h4>
+		 </div>
+		 <div class="service-grids">
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic1.png" alt=""/>
+				 <h3>TRAINING</h3>
+				 <h4>JAVA BASED TECHNOGIES</h4>
+			 </div>
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic2.png" alt=""/>
+				 <h3>DEVELOPMENT</h3>
+				 <h4>CUSTOM SOLUTIONS</h4>
+			 </div>
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic3.png" alt=""/>
+				 <h3>PROJECTS</h3>
+				 <h4>INFRASTRUCTURE FOR PROJECTS</h4>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>		 
+	 </div>
+</div>
+<!---->
+<div class="author">
+	 <div class="container">
+		 <h3>I call it my <span>billion-dollar mistake.</span> It was the invention of the null reference in 1965.</h3>
+		 <h4>- TONY HOARE</h4>
+	 </div>
+</div>
+<!---->
+<script src="js/jquery.min.js"> </script>
+<script src="js/responsiveslides.min.js"></script>
+ <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+ <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<!--<div id="portfolio" class="portfolio">-->
+	 <!--<div class="container">-->
+		 <!--<h3>PORTFOLIO</h3>-->
+		  <!--<div class="slider">-->
+				<!--<ul class="rslides" id="slider2">-->
+				  <!--<li>-->
+					 <!--<div class="works main">						  -->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p1.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+							    <!--<img src="images/p2.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p3.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p4.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p5.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p6.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						 <!--<div class="clearfix"></div>-->
+					  <!--</div>				-->
+				  <!--</li>-->
+				 <!--<li>-->
+					 <!--<div class="works main">						  -->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p3.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+							    <!--<img src="images/p6.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p4.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p5.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p1.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p2.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						 <!--<div class="clearfix"></div>-->
+					  <!--</div>				-->
+				  <!--</li>-->
+				 <!--<li>-->
+					 <!--<div class="works main">						  -->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     -->
+								<!--<img src="images/p4.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+							    <!--<img src="images/p5.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p3.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p1.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p7.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p6.jpg" alt="">-->
+						  <!--</div>-->
+						  <!--<div class="gallery-box">-->
+								<!--<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     -->
+								<!--<img src="images/p2.jpg" alt="">-->
+						  <!--</div>-->
+						 <!--<div class="clearfix"></div>-->
+					  <!--</div>				-->
+				  <!--</li>-->
+				<!--</ul>-->
+				   <!--<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>-->
+				<!--<script type="text/javascript">-->
+				<!--$(document).ready(function(){-->
+				    <!--$('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });-->
+				<!--});-->
+				<!--</script>-->
+		  <!--</div>-->
+	 <!--</div>-->
+<!--</div>-->
+<!---->
+<!--<div id="teamwork" class="teamwork">-->
+	 <!--<div class="container">-->
+		 <!--<div class="team-head">-->
+		 <!--<h3>TEAMWORK</h3>-->
+		 <!--<h4>JUST A CREATIVE TEAM</h4>-->
+		 <!--</div>-->
+		 <!--<div class="clients">-->
+			 <!--<div class="course_demo1">-->
+		          <!--<ul id="flexiselDemo1">	-->
+					 <!--<li>-->
+						<!--<div class="client">-->
+							<!--<img src="images/per1.png" alt="" />-->
+							<!--<h3>Anas.Emad</h3>-->
+							<!--<h4>EMARKETING SPECIALIST</h4>-->
+						<!--</div>-->
+					 <!--</li>-->
+					 <!--<li>-->
+					    <!--<div class="client">-->
+							<!--<img src="images/per2.png" alt="" />-->
+							<!--<h3>M.Baghago</h3>-->
+							<!--<h4>UI/UX DESIGNER</h4>-->
+						<!--</div>-->
+					  <!--</li>	-->
+					 <!--<li>-->
+					    <!--<div class="client">-->
+							<!--<img src="images/per4.png" alt="" />-->
+							<!--<h3>Ahmed Ali</h3>-->
+							<!--<h4>SENIOR UI DESIGNER</h4>-->
+						<!--</div>-->
+					 <!--</li>	-->
+					 <!--<li>-->
+					    <!--<div class="client">-->
+							<!--<img src="images/per3.png" alt="" />-->
+							<!--<h3>A.Eliminshawy</h3>-->
+							<!--<h4>GRAPHIC DESIGNER</h4>-->
+						<!--</div>-->
+					 <!--</li>	-->
+					 <!--<li>-->
+						<!--<div class="client">-->
+							<!--<img src="images/per2.png" alt="" />-->
+							<!--<h3>A.Eliminshawy</h3>-->
+							<!--<h4>GRAPHIC DESIGNER</h4>-->
+						<!--</div>-->
+					 <!--</li>	-->
+					 <!--<li>-->
+						<!--<div class="client">-->
+							<!--<img src="images/per3.png" alt="" />-->
+							<!--<h3>M.Baghago</h3>-->
+							<!--<h4>UI/UX DESIGNER</h4>-->
+						<!--</div>-->
+					 <!--</li>-->
+					 <!--<li>-->
+						<!--<div class="client">-->
+							<!--<img src="images/per4.png" alt="" />-->
+							<!--<h3>Ahmed Ali</h3>-->
+							<!--<h4>SENIOR UI DESIGNER</h4>-->
+						<!--</div>-->
+					 <!--</li>-->
+				 <!--</ul>-->
+			 <!--</div>-->
+			 <!--<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />-->
+				<!--<script type="text/javascript">-->
+			 <!--$(window).load(function() {-->
+				<!--$("#flexiselDemo1").flexisel({-->
+					<!--visibleItems: 4,-->
+					<!--animationSpeed: 1000,-->
+					<!--autoPlay: true,-->
+					<!--autoPlaySpeed: 3000,    		-->
+					<!--pauseOnHover: true,-->
+					<!--enableResponsiveBreakpoints: true,-->
+			    	<!--responsiveBreakpoints: { -->
+			    		<!--portrait: { -->
+			    			<!--changePoint:480,-->
+			    			<!--visibleItems: 1-->
+			    		<!--}, -->
+			    		<!--landscape: { -->
+			    			<!--changePoint:640,-->
+			    			<!--visibleItems: 2-->
+			    		<!--},-->
+			    		<!--tablet: { -->
+			    			<!--changePoint:768,-->
+			    			<!--visibleItems: 3-->
+			    		<!--}-->
+			    	<!--}-->
+			    <!--});-->
+			    <!---->
+			 <!--});-->
+			  <!--</script>-->
+			 <!--<script type="text/javascript" src="js/jquery.flexisel.js"></script>-->
+		 <!--</div>-->
+	 <!--</div>-->
+<!--</div>-->
+<!---contact-->
+<div id="contact" class="contact">
+	 <div class="container">
+		 <h3>CONTACT</h3>
+		 <h4>Feel free to contact with us.</h4>
+		 <h4>At this moment we speak English, Polish and some kind of binary.</h4>
+		 <div class="contact-form">
+			 <form action="https://getsimpleform.com/messages?form_api_token=7daf1f9b0e5d9947f3fe26c348685737" method="post">
+				 <div class="col-md-6 contact-left">
+					  <input type="text" placeholder="Name"   name="name" required/>
+					  <input type="text" placeholder="E-mail" name="email" required/>
+					  <input type="text" placeholder="Phone"  name="phone" required/>
+				  </div>
+				  <div class="col-md-6 contact-right">
+					 <textarea placeholder="Message"></textarea>
+					 <input type="submit" value="SEND"/>
+				 </div>
+				 <div class="clearfix"></div>
+			 </form>
+	     </div>
+	 </div>
+</div>
+<!---fotter-->
+<div class="fotter">
+	 <p>Copyrights &copy; 2015 Jalil All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+</div>
+<!---->
 
-    </div>
-</div>
-<!-- /banner -->
-
-<!-- about -->
-<div class="about" id="about">
-    <div class="container">
-        <h3><span>A</span>bout Us</h3>
-        <p>Still have issues in your java project? Next problem solved by introducing ProblemFactory? We could help
-            you and your team. Directly by help you with code. Indirectly by training, auditing and mentoring your
-            team. </p>
-        <p>Just let us to help solving your Billion Dollar Mistake</p>
-        <!--<img src="images/1.jpg" class="img-responsive" alt=""/>-->
-        <!--<div class="abt-btm">-->
-            <!--<p>Lorem Ipsum is simply dummy text of the printing and typeset</p>-->
-            <!--<p> Lorem Ipsum has been the industry's standard dummy text </p>-->
-        <!--</div>-->
-        <!--<a class="hvr-shutter-in-horizontal button" href="messages.html">Read More</a>-->
-    </div>
-</div>
-<!-- /about -->
-<!-- services -->
-<!--<div class="services" id="services">-->
-<!--<div class="container">-->
-<!--<h3><span>S</span>ervices</h3>-->
-<!--<div class="serv-top">-->
-<!--<div class="col-md-4 serv-left">-->
-<!--<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>-->
-<!--<h4>Lorem Ipsum</h4>-->
-<!--<p> Nam libero tempore, cum soluta nobis est eligendi optio-->
-<!--cumque nihil impedit quo minus id quod .</p>-->
-<!--</div>-->
-<!--<div class="col-md-4 serv-left">-->
-<!--<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>-->
-<!--<h4>Lorem Ipsum</h4>-->
-<!--<p> Nam libero tempore, cum soluta nobis est eligendi optio-->
-<!--cumque nihil impedit quo minus id quod .</p>-->
-<!--</div>-->
-<!--<div class="col-md-4 serv-left">-->
-<!--<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>-->
-<!--<h4>Lorem Ipsum</h4>-->
-<!--<p> Nam libero tempore, cum soluta nobis est eligendi optio-->
-<!--cumque nihil impedit quo minus id quod .</p>-->
-<!--</div>-->
-<!--<div class="clearfix"></div>-->
-<!--</div>-->
-<!--<div class="ser-botm">-->
-<!--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical-->
-<!--Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at-->
-<!--Hampden-Sydney College in Virginia</p>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!-- /services -->
-<!-- features -->
-<!--<div class="features" id="features">-->
-<!--<div class="container">-->
-<!--<h3><span>F</span>eatures</h3>-->
-<!--<div class="feat-top">-->
-<!--<div class="col-md-6 feat-left">-->
-<!--<h4>For Users</h4>-->
-<!--<ul>-->
-<!--<li><a href="#">Advanced Search Capabilities</a></li>-->
-<!--<li><a href="#">Email Notifications Controlled By User</a></li>-->
-<!--<li><a href="#">Bug Lists in Multiple Formats </a></li>-->
-<!--<li><a href="#">Time Tracking , Request System</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--<div class="col-md-6 feat-rgt">-->
-<!--<img src="images/3.jpg" class="img-responsive" alt=""/>-->
-<!--</div>-->
-<!--<div class="clearfix"></div>-->
-<!--</div>-->
-<!--<div class="feat-btom">-->
-<!--<div class="col-md-6 feat-rgt">-->
-<!--<img src="images/2.jpg" class="img-responsive" alt=""/>-->
-<!--</div>-->
-<!--<div class="col-md-6 feat-left">-->
-<!--<h4>For Administrators</h4>-->
-<!--<ul>-->
-
-<!--<li><a href="#">Reports and Charts</a></li>-->
-<!--<li><a href="#">Excellent Security</a></li>-->
-<!--<li><a href="#">Impersonate Users</a></li>-->
-<!--<li><a href="#">Custom Workflow</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--<div class="clearfix"></div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!-- /features -->
-<!-- contact -->
-<div class="contact" id="contact">
-    <div class="container">
-        <h3><span>C</span>ontact</h3>
-        <div class="con-top">
-            <p>Feel free to contact with us.</p>
-            <p>At this moment we speak English, Polish and some kind of binary.</p>
-        </div>
-        <div class="con-botm">
-            <form action="https://getsimpleform.com/messages?form_api_token=7daf1f9b0e5d9947f3fe26c348685737" method="post">
-                <input type='hidden' name='redirect_to' value='http://nullpointer-solutions.com/' />
-                <div class="col-md-6 cont-left">
-                    <input type="text" value="Subject" onfocus="this.value='';"
-                           onblur="if (this.value == '') {this.value ='Subject';}">
-                    <textarea name="Message" cols="77" rows="6" value=" " onfocus="this.value='';"
-                              onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-                </div>
-                <div class="col-md-6 cont-rgt">
-                    <input type="text" value="Name" onfocus="this.value='';"
-                           onblur="if (this.value == '') {this.value ='Name';}">
-                    <input type="text" value="Your Email" onfocus="this.value='';"
-                           onblur="if (this.value == '') {this.value ='Your Email';}">
-                    <div class="send">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </form>
-        </div>
-    </div>
-    <!--<div class="map">-->
-    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29563741.732964274!2d115.05682019571891!3d-25.2418018743732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1453876650961"-->
-    <!--width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-    <!--</div>-->
-</div>
-<!-- /contact -->
-<!--- footer ---->
-<div class="footer">
-    <div class="container">
-        <p>© 2016 NullPointer Solutions. All Rights Reserved | Design by <a href="http://w3layouts.com/"
-                                                                            target="_blank">W3layouts</a>
-        </p>
-        <!--<div class="social">-->
-            <!--<ul>-->
-                <!--<li><a href="#" class="facebook"> </a></li>-->
-                <!--<li><a href="#" class="facebook twitter"> </a></li>-->
-                <!--<li><a href="#" class="facebook chrome"> </a></li>-->
-                <!--<li><a href="#" class="facebook in"> </a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-        <div class="clearfix"></div>
-    </div>
-</div>
-<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover"
-                                                                                                       style="opacity: 0;"> </span></a>
-<!--- footer ---->
+<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
 </body>
 </html>
