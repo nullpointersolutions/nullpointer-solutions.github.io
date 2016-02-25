@@ -36,12 +36,17 @@ ul {
     background: #000000;
 }
 
-.logo {
+.logo{
     float: left;
+}
+.logo a,
+.logo a:visited{
     font-size: 2em;
     font-family: 'Source Code Pro';
     color: #ffffff;
+    text-decoration: none;
 }
+
 
 .top-menu {
     float: right;
@@ -221,7 +226,8 @@ a.downarrow span {
 }
 
 .author h3 span {
-    display: block;
+    display: inline-block;
+    font-style: italic;
     margin-top: 15px;
 }
 
